@@ -1,0 +1,93 @@
+#header_other {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background-color: aqua; */
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.menu_btn {
+  border: none;
+  margin: 10px;
+  background-color: transparent;
+  cursor: pointer;
+}
+p,
+h1,
+h2,
+a {
+  font-family: "roboto", sans-serif;
+}
+#menu {
+  display: none;
+  position: absolute;
+  right: 3%;
+  top: 8%;
+  background: rgba(255, 255, 255, 1);
+  border: 1px solid rgba(0, 0, 0, 1);
+  box-sizing: border-box;
+  /* padding-top: 20px; */
+  /* border-radius: 10%; */
+  width: 15%;
+  min-width: 230px;
+}
+
+#menu img {
+  margin-left: 15px;
+  margin-right: -20px;
+}
+.dita_logo {
+  min-width: 100px;
+  margin: 0px;
+  margin-left: -30px;
+}
+.menu_img {
+  width: 30px;
+}
+#menu a {
+  margin: 5px;
+  /* margin-left: 30px; */
+  text-align: end;
+  width: 70%;
+  font-size: 15px;
+}
+#menu a:hover {
+  text-decoration: underline;
+  box-shadow: 0px 0px 5px 0px rgba(129, 129, 129, 0.5);
+}
+.menu_img:hover {
+  .menu_div {
+    display: flex;
+  }
+}
+.dita_logo {
+  padding-left: -40px;
+}
+
+@media screen and (max-width: 1200px) {
+  #menu {
+    top: 3%;
+  }
+  #menu a {
+    margin: 5px;
+    margin-left: 30px;
+    margin-bottom: -10px;
+  }
+  .menu_btn {
+    position: relative;
+    right: -4%;
+  }
+  .cancel_button {
+    position: relative;
+    left: 67%;
+    width: 50px;
+    height: 50px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  .cancel_img {
+    width: 30px;
+    height: 30px;
+  }
+}

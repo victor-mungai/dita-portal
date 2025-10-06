@@ -1,0 +1,125 @@
+.event_title {
+  text-align: center;
+  font-size: 60px;
+  margin: 0px;
+}
+p,
+h1,
+h2,
+a {
+  font-family: "roboto", sans-serif;
+}
+.single_event {
+  display: flex;
+  justify-content: space-evenly;
+  margin-left: auto;
+  margin-right: auto;
+}
+.single_event_img {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  border-right: 1px solid black;
+  padding: 40px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  border-color: rgba(0, 0, 0, 0.2);
+}
+.single_event_img p
+{
+  word-break: break-all;
+  overflow-wrap: break-word;
+  max-width: 90%;
+}
+.single_event_img img {
+  width: 400px;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.single_event_img img h2 {
+  text-align: center;
+  font-size: 30px;
+  margin: 0px;
+}
+.single_event_img img hr {
+  margin-left: 25px;
+  border: 0.5px solid black;
+}
+.single_event_img img p {
+  width: 600px;
+}
+.Single_events_details {
+  margin-top: 50px;
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 150px;
+  border: 1px solid black;
+  height: fit-content;
+  padding: 20px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  border-color: rgba(0, 0, 0, 0.2);
+}
+.registration_details {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.registration_details p
+{
+  word-break: break-all;
+  overflow-wrap: break-word;
+  max-width: 90%;
+}
+.registration_details h3 div {
+  margin-bottom: 20px;
+}
+.registration_details a {
+  text-decoration: none;
+  color: rgb(0, 40, 151);
+  margin-left: 0px;
+}
+
+@media screen and (max-width: 1200px) {
+  .single_event_img img {
+    width: 300px;
+    height: 300px;
+  }
+  .single_event {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+  }
+  .single_event_img {
+    width: 100%;
+    padding: 0px;
+  }
+  .single_event_img h2 {
+    margin: 0px;
+    margin-top: 18px;
+    text-align: center;
+  }
+  .single_event_img p {
+    font-size: 13px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: 90%;
+  }
+  .Single_events_details {
+    width: 100%;
+    margin: 0px;
+    margin-top: 20px;
+    padding: 0px;
+  }
+  .event_title {
+    margin-top: 0px;
+    font-size: 30px;
+  }
+  .registration_details p {
+    font-size: 13px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    min-width: 330px;
+  }
+}

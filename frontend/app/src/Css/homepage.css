@@ -1,0 +1,601 @@
+#home_page {
+  padding-left: 0px;
+  padding-right: 0px;
+  margin-top: 50px;
+  width: 100vw;
+}
+.home_about {
+  display: flex;
+  justify-content: center;
+}
+.phone_img {
+  display: none;
+}
+p,
+h1,
+h2,
+a {
+  font-family: "roboto", sans-serif;
+}
+
+.home_about_text {
+  width: 40%;
+  text-align: center;
+}
+.home_about_phone_view {
+  display: none;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(/src/assets/club_image.jpeg);
+  /* background-image: url(/src/assets/club_image.jpeg); */
+  background-position: center;
+  background-size: cover;
+  /* border-radius: 50px; */
+  height: 500px;
+}
+.home_about_phone_view h1 {
+  margin: 0px;
+  margin-top: 150px;
+  color: white;
+  font-size: 55px;
+}
+.home_about_phone_view h5 {
+  color: white;
+  margin: 0px;
+}
+.home_about_text h5 {
+  margin-top: 300px;
+  font-size: 23px;
+}
+.home_about_text h1 {
+  margin-top: -20px;
+  font-size: 75px;
+}
+.home_about_img {
+  margin-left: 20px;
+  width: 40%;
+  height: 700px;
+  background-image: url(/src/assets/club_image.jpeg);
+  background-position: center;
+  background-size: cover;
+  border-radius: 30px;
+}
+
+.home_about_img {
+  background-color: rgb(207, 207, 207);
+}
+
+.home_services {
+  margin-top: 150px;
+}
+
+.home_services h1 {
+  text-align: center;
+  font-size: 37px;
+}
+#services {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+#services div {
+  width: 300px;
+  margin-left: 60px;
+  height: 200px;
+  margin-top: 30px;
+}
+
+#services div img {
+  margin-left: 20px;
+  width: 250px;
+  height: 200px;
+}
+#services div h2 {
+  text-align: center;
+}
+#services div p {
+  text-align: center;
+  font-size: 20px;
+}
+.learn_more1 {
+  margin-top: 80px;
+  color: rgba(0, 0, 0, 0.44);
+}
+.learn_more2 {
+  margin-top: 50px;
+  color: rgba(0, 0, 0, 0.44);
+}
+.learn_more3 {
+  margin-top: 30px;
+  color: rgba(0, 0, 0, 0.44);
+}
+
+.home_meet_team {
+  margin-top: 350px;
+  margin-left: 30px;
+}
+
+.home_meet_team h1 {
+  font-size: 37px;
+}
+.home_meet_team p {
+  font-size: 20px;
+}
+.OurTeams {
+  margin-bottom: 10px;
+  display: flex;
+  overflow-x: auto;
+  height: 400px;
+  flex-wrap: nowrap;
+  scroll-snap-type: x mandatory;
+  scroll-padding: 0 24px;
+}
+
+.OurTeams div {
+  scroll-snap-align: center;
+  scroll-snap-stop: always;
+  scroll-padding: 0 24px;
+  margin: 20px;
+  margin-top: 0px;
+  padding: 50px;
+  padding-top: 0px;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+}
+.OurTeams::-webkit-scrollbar {
+  display: none;
+}
+.Links {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-wrap: wrap;
+}
+.Links a {
+  margin: 5px;
+}
+.OurTeams div:first-child {
+  padding-left: 10px;
+}
+.OurTeams div:last-child {
+  padding-right: 0px;
+}
+
+.OurTeams div p {
+  font-size: 14px;
+  text-align: start;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  max-width: 90%;
+}
+.OurTeams div img {
+  border-radius: 50%;
+  width: 150px;
+  height: 150px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.home_mission {
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: #01174f;
+  padding: 50px;
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+.home_vision {
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background: rgba(23, 47, 107, 1);
+  padding: 50px;
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+.home_mission h1 {
+  margin: 0px;
+  font-size: 48px;
+  width: 100%;
+  font-weight: 500;
+  font: inter;
+}
+.home_vision h1 {
+  margin: 0px;
+  font-size: 55px;
+  width: 100%;
+  font-weight: 500;
+  font: inter;
+}
+.home_vision p,
+.home_mission p {
+  width: 600px;
+  font-size: 30px;
+}
+.home_contact h1 {
+  font-size: 48px;
+  margin: 40px;
+}
+.home_contact a {
+  text-decoration: none;
+  color: black;
+  transition: all 1s;
+}
+.home_contact a:hover {
+  color: rgb(84, 84, 205);
+}
+.contact_details div p {
+  width: 300px;
+}
+.Email
+{
+  margin-left: 0px;
+}
+
+.contact_details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  /* background-color: aqua; */
+}
+.contact_details div h2 {
+  margin-top: 0px;
+  font-size: 49px;
+  font-weight: 500;
+}
+.contact_details div p {
+  font-size: 20px;
+}
+.contact_details div img {
+  width: 50px;
+}
+.home_partnerships {
+  text-align: center;
+  margin-top: 100px;
+  background-color: rgba(29, 49, 94, 0.66);
+  padding: 100px;
+}
+.home_partnerships div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.home_partnerships h1 {
+  font-size: 48px;
+  width: 100%;
+  margin: 0px;
+}
+.home_partnerships p {
+  font-size: 24px;
+  width: 700px;
+}
+.home_partnerships img {
+  margin-top: 50px;
+  margin-left: 100px;
+  margin-right: 100px;
+  width: 100px;
+  height: 100px;
+}
+.home_partnerships img:nth-child(2) {
+  width: 150px;
+}
+.home_partnerships img:nth-child(3) {
+  width: 200px;
+}
+.empty_div {
+  /* display: none; */
+  background-color: white;
+  width: 50%;
+  height: 200px;
+  position: absolute;
+  left: 25%;
+  top: 3790px;
+}
+
+.home_footer {
+  padding: 150px;
+  padding-bottom: 50px;
+  background-color: black;
+  color: white;
+}
+
+.footer_links h1 {
+  color: white;
+  font-size: 40px;
+  font-weight: 600;
+  font: inter;
+  margin-bottom: 90px;
+  margin-right: 80px;
+}
+.footer_links h2 {
+  color: white;
+  font-size: 36px;
+  font-weight: 600;
+  font: inter;
+}
+
+.footer_links {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 50px;
+}
+.footer_links div a {
+  width: 100%;
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+}
+
+.links {
+  margin-top: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.links img {
+  color: white;
+  /* background: white; */
+  background-color: white;
+  margin: 10px;
+  width: 30px;
+}
+
+.copyright {
+  margin-top: 20px;
+  text-align: center;
+}
+
+
+.related_links a
+{
+  margin: 0px;
+}
+
+
+@media screen and (max-width: 1200px) {
+  .contact_details a {
+    font-size: 15px;
+    margin: 0px;
+  }
+  .OurTeams::-webkit-scrollbar {
+    display: none;
+  }
+  #home_page {
+    margin-top: 0px;
+  }
+  .home_about_text {
+    display: block;
+  }
+  .home_about {
+    display: none;
+  }
+  .home_about_text h1 {
+    margin: 0px;
+    margin-left: 30px;
+    font-size: 50px;
+    font-weight: 700;
+  }
+  .home_about_phone_view {
+    display: flex;
+    margin-top: 20px;
+    margin-left: -1.5%;
+    margin-right: -1.7%;
+  }
+  .home_about_text h5 {
+    text-align: start;
+    margin-left: 30px;
+    margin-right: 0px;
+    margin-top: 80px;
+    font-size: 20px;
+    font-weight: 600;
+  }
+  .home_services {
+    margin-top: 50px;
+  }
+  .home_services h1 {
+    font-size: 23px;
+  }
+  .home_services h2 {
+    font-size: 20px;
+  }
+  #services div p {
+    font-size: 14px;
+  }
+  .learn_more1 {
+    margin-top: 30px;
+    color: rgba(0, 0, 0, 0.44);
+  }
+  .learn_more2 {
+    margin-top: 30px;
+    color: rgba(0, 0, 0, 0.44);
+  }
+  .learn_more3 {
+    margin-top: 30px;
+    color: rgba(0, 0, 0, 0.44);
+  }
+  #services div {
+    margin-bottom: 200px;
+    margin-right: 90px;
+  }
+  #services div:last-child {
+    margin-bottom: 250px;
+  }
+  .home_about_img {
+    display: none;
+  }
+  .phone_img {
+    display: block;
+    width: 180px;
+    height: 200px;
+    margin-top: 20px;
+    margin-right: 20px;
+  }
+  .home_about {
+    /* background-image: url(/src/assets/club_image.jpeg); */
+    color: white;
+    background-position: center;
+    filter: brightness(0.5);
+    background-size: cover;
+    margin-bottom: 20px;
+  }
+  .home_about_text {
+    margin-bottom: 20px;
+    margin-right: 50px;
+  }
+  .contact_details div h2 {
+    font-size: 30px;
+  }
+  .contact_details div p {
+    font-size: 13px;
+    width: 150px;
+  }
+  .contact_details div a {
+    text-decoration: none;
+  }
+  .contact_details div {
+    margin-bottom: 50px;
+    width: 150px;
+  }
+  .contact_details div:nth-child(2) p {
+    margin-bottom: 28px;
+  }
+  .home_contact h1 {
+    font-size: 40px;
+  }
+  .contact_details div:last-child {
+    margin-top: -30px;
+  }
+  .phone {
+    margin-top: 20px;
+  }
+  .contact_details div:last-child {
+    margin-bottom: 0px;
+  }
+  .home_partnerships h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .home_partnerships div {
+    text-align: center;
+    width: 300px;
+    margin: 0px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .home_partnerships {
+    padding: 20px;
+    margin: 0px;
+    margin-top: 50px;
+  }
+  .home_partnerships p {
+    width: 300px;
+    font-size: 15px;
+  }
+  .home_partnerships img {
+    width: 50px;
+    height: 50px;
+  }
+  .footer_links {
+    width: 300px;
+    padding: 20px;
+    text-decoration: none;
+  }
+  .home_footer {
+    margin: 0px;
+    padding: 0px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .footer_links 
+  {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .footer_links img {
+    width: 150px;
+  }
+  .footer_links h2 {
+    text-align: center;
+    font-size: 25px;
+  }
+  .footer_links div a {
+    font-size: 13px;
+    /* color: blue; */
+    text-align: center;
+  }
+  .home_vision h1,
+  .home_mission h1 {
+    font-size: 35px;
+    width: 300px;
+  }
+  .home_vision p,
+  .home_mission p {
+    font-size: 14px;
+    width: 300px;
+  }
+  .home_vision,
+  .home_mission {
+    padding: 50px;
+    margin-left: -1.5%;
+    margin-right: -1.7%;
+  }
+  .home_mission div {
+    margin-bottom: 10px;
+  }
+  .copyright {
+    font-size: 12px;
+  }
+  .links img {
+    width: 20px;
+  }
+  .home_meet_team {
+    margin-top: 50px;
+  }
+  .home_meet_team h1 {
+    font-size: 27px;
+  }
+  .home_meet_team p {
+    font-size: 14px;
+  }
+  .OurTeams div img {
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+  }
+  .OurTeams div {
+    padding: 0px;
+  }
+  .leader {
+    min-width: 240px;
+  }
+  .leader p
+  {
+    word-break: break-all;
+    overflow-wrap: break-word;
+    max-width: 99%;
+  }
+  .home_meet_team {
+    margin: 0px;
+  }
+  .home_footer,
+  .home_partnerships
+  {
+    margin-left: -1.5%;
+    margin-right: -1.7%;
+  }
+  .home_footer
+  {
+    margin-bottom: -3.5%;
+  }
+}
