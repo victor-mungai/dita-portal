@@ -5,7 +5,7 @@ services:
       context: ./dita-website-backend
       dockerfile: Dockerfile
     container_name: dita-backend
-    restart: onfailure
+    restart: always
     ports:
       - "3001"
     environment:
