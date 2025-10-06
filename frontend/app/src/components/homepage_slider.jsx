@@ -11,7 +11,7 @@ function display_leaders() {
   const [loading, setLoading] = useState(true);
 
   function fetchJson() {
-    fetch("https://api.dita.co.ke/ditaleaders")
+    fetch("/api/ditaleaders")
       .then((response) => response.json())
       .then((data) => {
         setLeaders(data);
