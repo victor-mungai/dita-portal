@@ -1,0 +1,58 @@
+version: '3.8'
+
+services:
+  nginx:
+    image: nginx:alpine
+    container_name: dita-nginx
+    ports:
+      - "80:80" #to be changed
+      
+    volumes:
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+    depends_on:
+      - frontend
+      - backend
+    networks:
+      - dita-network
+
+  frontend:
+    build:
+      context: ./frontend/app
+      dockerfile: Dockerfile
+    container_name: dita-frontend
+    volumes:
+      - dita-frontend:/usr/share/nginx/html
+    networks:
+      - dita-network
+
+  backend:
+    build:
+      context: ./backend/app
+      dockerfile: Dockerfile
+    container_name: dita-backend
+    environment:
+      - PORT=3001
+      - MONGODB_URI=mongodb://mongo:27017/Dita-Website-Backend
+    volumes:
+      - dita-backend:/app
+    depends_on:
+      - mongo
+    networks:
+      - dita-network
+
+  mongo:
+    image: mongo:latest
+    container_name: dita-mongo
+    volumes:
+      - mongo-data:/data/db
+    networks:
+      - dita-network
+
+volumes:
+  mongo-data:
+  dita-frontend:
+  dita-backend:
+
+networks:
+  dita-network:
+    driver: bridge
