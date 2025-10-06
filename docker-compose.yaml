@@ -13,7 +13,6 @@ services:
       - PORT=3001  
     depends_on:
       - mongo
-    command: nodemon index.js
     volumes:
       - dita-backend:/app/Images
     networks:
