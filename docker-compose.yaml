@@ -1,0 +1,76 @@
+---
+services:
+  backend:
+    build:
+      context: ./dita-website-backend
+      dockerfile: Dockerfile
+    container_name: dita-backend
+    restart: onfailure
+    ports:
+      - "3001"
+    environment:
+      - MONGO_URI=mongodb://mongo:27017/Dita-Website-Backend
+      - PORT=3001  
+    depends_on:
+      - mongo
+    command: nodemon index.js
+    volumes:
+      - dita-backend:/app/Images
+    networks:
+       - dita-network
+
+  mongo:
+    image: mongo:6.0
+    container_name: dita_mongo
+    ports:
+      - "27017"
+    volumes:
+      - dita-mongo_data:/data/db
+    networks:
+      - dita-network
+    healthcheck:
+      test: ["CMD", "mongo", "--eval", "db.adminCommand('ping')"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+
+  frontend:
+    build:
+      context: ./dita-website-frontend
+      dockerfile: Dockerfile
+    container_name: dita-frontend
+    restart: always
+    ports:
+      - "5173"
+    depends_on:
+      - mongo
+      - backend
+    volumes:
+      - dita-frontend:/app/Images
+    networks:
+      - dita-network
+  
+
+  proxy:
+    image: nginx:latest
+    container_name: dita_nginx
+    restart: always
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx.conf:/etc/nginx/nginx.conf
+    depends_on:
+      - frontend
+      - backend
+    networks:
+      - dita-network
+
+volumes:
+  dita-mongo_data:
+  dita-backend:
+  dita-frontend:
+
+networks:
+  dita-network:
+     driver: bridge 
