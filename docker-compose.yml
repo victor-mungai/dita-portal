@@ -5,7 +5,7 @@ services:
     image: nginx:alpine
     container_name: dita-nginx
     ports:
-      - "80:80" #to be changed
+      - "70:80" #to be changed
       
     volumes:
       - ./nginx/nginx.conf:/etc/nginx/nginx.conf
